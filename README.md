@@ -1,3 +1,3 @@
 # Strapi application
 
-crazy imagine
+crazy imagine strapi
