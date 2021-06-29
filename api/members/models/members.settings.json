@@ -32,6 +32,21 @@
     },
     "cardDescription": {
       "type": "string"
+    },
+    "techcnologies": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "role": {
+      "type": "string"
+    },
+    "positions": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
     }
   }
 }
