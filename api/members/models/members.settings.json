@@ -47,6 +47,14 @@
     },
     "lastName": {
       "type": "string"
+    },
+    "skill": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.skill"
+    },
+    "Portfolio": {
+      "type": "text"
     }
   }
 }

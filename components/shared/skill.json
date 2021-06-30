@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_skills",
+  "info": {
+    "name": "skill",
+    "icon": "bolt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "percentage": {
+      "type": "string"
+    }
+  }
+}

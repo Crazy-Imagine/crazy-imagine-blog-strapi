@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/memberpage",
+      "handler": "memberpage.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/memberpage",
+      "handler": "memberpage.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/memberpage",
+      "handler": "memberpage.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
