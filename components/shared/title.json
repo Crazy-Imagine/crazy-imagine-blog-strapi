@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_titles",
+  "info": {
+    "name": "title",
+    "icon": "air-freshener",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
