@@ -26,6 +26,36 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "ourProjectsTitle": {
+      "type": "string"
+    },
+    "outProjectsDescription": {
+      "type": "text"
+    },
+    "ourProjectsImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "imageTitle": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
