@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "projects",
   "info": {
-    "name": "Projects"
+    "name": "Projects",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -22,6 +23,22 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "details": {
+      "type": "text"
+    },
+    "moreAbout": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }
