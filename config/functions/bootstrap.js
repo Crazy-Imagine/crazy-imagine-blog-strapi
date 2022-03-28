@@ -5,7 +5,7 @@ const path = require("path");
 const mime = require("mime-types");
 const {
   categories,
-  homepage,
+  homepage, 
   writers,
   articles,
   global
