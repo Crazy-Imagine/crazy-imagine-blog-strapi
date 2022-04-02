@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/work-with-us",
+      "handler": "work-with-us.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/work-with-us",
+      "handler": "work-with-us.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/work-with-us",
+      "handler": "work-with-us.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
