@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: .
+    destination: /home/ubuntu/crazy-imagine-blog-strapi
+hooks:
+  AfterInstall:
+    - location: scripts/install-dependencies
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/start-server
+      timeout: 300
+      runas: root
