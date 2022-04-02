@@ -1,3 +1,3 @@
-# Strapi application
+# Crazy Imagine Blog
 
-crazy imagine strapi
+Strapi Application used to create Crazy Imagine Blog
