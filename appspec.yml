@@ -3,8 +3,11 @@ os: linux
 files:
   - source: .
     destination: /home/ubuntu/crazy-imagine-blog-strapi
-    file_exists_behavior: OVERWRITE
 hooks:
+  BeforeInstall:
+    - location: scripts/before-install
+      timeout: 300
+      runas: root
   AfterInstall:
     - location: scripts/install-dependencies
       timeout: 300
