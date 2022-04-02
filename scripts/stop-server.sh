@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /home/ubuntu
-pm2 stop ecosystem.config.js
+sudo /usr/bin/pm2 stop ecosystem.config.js
