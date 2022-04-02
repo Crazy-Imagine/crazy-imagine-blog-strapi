@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /home/ubuntu
-sudo rm -rf ./crazy-imagine-blog-strapi
+pm2 start ecosystem.config.js
