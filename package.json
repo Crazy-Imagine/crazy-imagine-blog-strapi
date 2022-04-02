@@ -5,9 +5,10 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi start", 
+    "start": "strapi start",
     "build": "strapi build --clean",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "deploy": "npm ci && npm run build"
   },
   "dependencies": {
     "@strapi/provider-email-sendgrid": "^4.1.3",
