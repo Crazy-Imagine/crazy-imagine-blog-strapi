@@ -1,14 +1,14 @@
 {
   "kind": "singleType",
-  "collectionName": "globals",
+  "collectionName": "about_pages",
   "info": {
-    "name": "Global",
+    "name": "AboutPage",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {
     "i18n": {
@@ -16,8 +16,8 @@
     }
   },
   "attributes": {
-    "favicon": {
-      "model": "file",
+    "images": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -32,20 +32,18 @@
         }
       }
     },
-    "siteName": {
+    "title": {
       "type": "string",
-      "required": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "defaultSeo": {
+    "SEO": {
       "type": "component",
       "repeatable": false,
       "component": "shared.seo",
-      "required": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
