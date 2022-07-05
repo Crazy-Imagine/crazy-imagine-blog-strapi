@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "curriculums",
   "info": {
-    "name": "Curriculums"
+    "name": "Curriculums",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "firstName": {
       "type": "string"
     },
     "email": {
@@ -19,18 +20,6 @@
     },
     "phone": {
       "type": "string"
-    },
-    "address": {
-      "type": "text"
-    },
-    "city": {
-      "type": "string"
-    },
-    "state": {
-      "type": "string"
-    },
-    "zip": {
-      "type": "integer"
     },
     "website": {
       "type": "string"
@@ -44,6 +33,15 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
     }
   }
 }

@@ -13,13 +13,14 @@ module.exports = {
           to: "support@crazyimagine.com",
           from: "support@crazyimagine.com",
           subject: "You have a new postulation!",
-          text: `Name: ${data.name}
-          Email: ${data.email}
+          text: `Name: ${data.firstName} ${data.lastName}
+          Email: ${data.email},
           Phone: ${data.phone},
-          Address: ${data.address}, City: ${data.city}, State: ${data.state},
-          Zip: ${data.zip}
+          ${data.linkedin ? `Linkedin: ${data.linkedin}` : ""},
           ${data.website ? `Website: ${data.website}` : ""}
           ${result.curriculum[0]?.url ? `PDF: ${result.curriculum[0].url}` : ""}
+          How did you hear about Crazy Imagine?
+          ${data.reference}
            `,
         });
       } catch (err) {
