@@ -93,6 +93,14 @@
           "localized": true
         }
       }
+    },
+    "Key": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
     }
   }
 }
