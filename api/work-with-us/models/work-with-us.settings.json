@@ -2,14 +2,19 @@
   "kind": "singleType",
   "collectionName": "work_with_uses",
   "info": {
-    "name": "work-with-us"
+    "name": "WorkWithUsPage",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "images": {
       "collection": "file",
@@ -21,18 +26,29 @@
       ],
       "plugin": "upload",
       "required": false,
-      "pluginOptions": {}
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "SEO": {
       "type": "component",
-      "repeatable": true,
-      "component": "shared.seo"
+      "repeatable": false,
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

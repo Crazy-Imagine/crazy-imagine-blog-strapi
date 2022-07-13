@@ -1,14 +1,14 @@
 {
   "kind": "singleType",
-  "collectionName": "globals",
+  "collectionName": "contact_pages",
   "info": {
-    "name": "Global",
+    "name": "ContactPage",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {
     "i18n": {
@@ -16,8 +16,16 @@
     }
   },
   "attributes": {
-    "favicon": {
-      "model": "file",
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "images": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -32,20 +40,10 @@
         }
       }
     },
-    "siteName": {
-      "type": "string",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "defaultSeo": {
+    "SEO": {
       "type": "component",
       "repeatable": false,
       "component": "shared.seo",
-      "required": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
